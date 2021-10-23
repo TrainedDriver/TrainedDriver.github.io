@@ -16,25 +16,10 @@ function scrollFunction() {
 
 // OWL-CAROUSAL
 $('.owl-carousel').owlCarousel({
-    items: 3,
-    loop:true,
-    nav:false,
-    dot:true,
-    autoplay: true,
-    slideTransition: 'linear',
-    autoplayHoverPause: true,
-    responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:2
-      },
-      1000:{
-          items:3
-      }
-  }
-})
+  infinite:true,
+  nav: false,
+  items: 4, 
+});
 
 // SCROLLSPY
 $(document).ready(function() {
